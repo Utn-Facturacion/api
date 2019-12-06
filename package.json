@@ -1,0 +1,34 @@
+{
+  "name": "api-facturacion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Facundo Larrauri",
+  "license": "MIT",
+  "scripts": {
+    "start": "./bin/api",
+    "dev": "nodemon ./bin/api"
+  },
+  "dependencies": {
+    "async": "^3.1.0",
+    "body-parser": "^1.19.0",
+    "chalk": "^3.0.0",
+    "config": "^3.2.4",
+    "cors": "^2.8.5",
+    "eslint": "^6.7.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "express": "^4.17.1",
+    "figlet": "^1.2.4",
+    "http": "^0.0.0",
+    "mariadb": "^2.1.4",
+    "milieu": "^1.9.4",
+    "nodemon": "^2.0.1",
+    "on-finished": "^2.3.0",
+    "pretty-ms": "^5.1.0",
+    "sequelize": "^5.21.2",
+    "winston": "^3.2.1"
+  }
+}
