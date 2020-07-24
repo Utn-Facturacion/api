@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "start": "./bin/api",
-    "dev": "nodemon ./bin/api"
+    "dev": "nodemon ./bin/api",
+    "down": "npx sequelize-cli db:migrate:undo:all",
+    "up": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
   },
   "dependencies": {
     "async": "^3.1.0",

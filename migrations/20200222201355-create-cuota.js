@@ -1,30 +1,39 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Persons', {
+    return queryInterface.createTable('Cuotas', {
       id: {
         type: Sequelize.INTEGER(10).UNSIGNED,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true
       },
-      name: {
+      estado: {
         type: Sequelize.STRING,
         allowNull: false
       },
-      lastname: {
+      montoCuota: {
+        type: Sequelize.FLOAT,
+        allowNull: false
+      },
+      montoAbonado: {
+        type: Sequelize.FLOAT,
+        allowNull: false
+      },
+      anio: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      mes: {
         type: Sequelize.STRING,
         allowNull: false
       },
-      dni: Sequelize.INTEGER,
-      phone: Sequelize.STRING,
-      email: Sequelize.STRING,
-      birthdate: Sequelize.DATE,
+      matriculaId: Sequelize.INTEGER,
+      facturaDetalleId: Sequelize.INTEGER,
       createdAt: Sequelize.DATE,
       updatedAt: Sequelize.DATE
     })
   },
-
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Persons')
+    return queryInterface.dropTable('Cuotas')
   }
 }

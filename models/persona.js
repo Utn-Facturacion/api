@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 
-const person = {
+const persona = {
   id: {
     type: Sequelize.INTEGER(10).UNSIGNED,
     allowNull: false,
@@ -21,4 +21,4 @@ const person = {
   birthdate: Sequelize.DATE
 }
 
-module.exports = person
+module.exports = persona
