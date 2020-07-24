@@ -4,10 +4,9 @@ const router = new Router()
 
 router.get('/', getRoot)
 
-function getRoot (req, res) {
+async function getRoot (req, res) {
   req.logger.verbose('Responding to root request')
   req.logger.verbose('Sending response to client')
-
   res.status(200).send({
     name: pkg.name,
     version: pkg.version,
